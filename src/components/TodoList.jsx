@@ -1,6 +1,6 @@
 import { TodoItem } from "./TodoItem"
 
-export function TodoList({ todos, toggleTodo, deleteTodo }) {
+export function TodoList({ todos, toggleTodo, deleteTodo }) {  // <-- Destructure all the props passed from App.jsx to use for List UI
   return (
     <ul className="list">
       {todos.length === 0 && "No Todos"}
